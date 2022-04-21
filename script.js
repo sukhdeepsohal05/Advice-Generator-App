@@ -4,7 +4,7 @@ generateAdviceBtn = document.querySelector('.generate-advice-btn');
 
 const generateAdvice = async()=>{
     try {
-        const res = await fetch('https://api.adviceslip.com/advice/117');
+        const res = await fetch('https://api.adviceslip.com/advice');
         const data = await res.json();
         setTimeout(() => {
             adviceId.textContent = `ADVICE  #${data.slip.id}`;
