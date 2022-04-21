@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body{
+    background-color: hsl(218, 23%, 16%);
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+
+.main{
+    background-color: hsl(217, 19%, 24%);
+    margin-top: -1rem;
+    padding: 3rem 3rem 5rem;
+    width: 35rem;
+    min-height: 20rem;
+    border-radius: 0.7rem;
+    text-align: center;
+    position: relative;
+}
+
+.advice-id{
+    color: hsl(150, 100%, 66%);
+}
+
+.advice{
+    margin: 2.5rem 0;
+    font-size: 28px;
+    color: hsl(193, 38%, 86%);
+}
+
+.divider{
+    height: 1rem;
+    width: 100%;
+    background: url('images/pattern-divider-desktop.svg') center center/cover no-repeat;
+}
+
+.generate-advice-btn{
+    background: url('images/icon-dice.svg') center center/35% no-repeat;
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 50%;
+    width: 4.5rem;
+    height: 4.5rem;
+    transition: box-shadow 0.5s ease;
+    position: absolute;
+    left: 50%;
+    bottom: -4.5rem;
+    transform: translate(-50%, -50%);
+}
+
+.generate-advice-btn:hover{
+    box-shadow: 0px 0px 30px 1px hsl(150, 100%, 66%);
+}
+
+.attribution {
+    position: absolute;
+    bottom: 1vh;
+    font-size: calc(0.6rem + 0.5vw);
+    width: 100%;
+    text-align: center;
+    color: hsl(193, 38%, 86%);
+}
+
+.attribution a {
+    color: hsl(150, 100%, 66%);
+    text-decoration: none;
+}
+
+@media screen  and (max-width: 426px){
+    .main {
+        padding: 2rem 2rem 3rem;
+        width: 20rem;
+        min-height: 17rem;
+    }
+
+    .advice {
+        font-size: 20px;
+        margin: 2rem 0rem;
+    }
+    .advice-id {
+        font-size: 15px;
+    }
+
+    .generate-advice-btn {
+        width: 3.5rem;
+        height: 3.5rem;
+        bottom: -3.5rem;
+    }
+}
